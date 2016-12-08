@@ -14,7 +14,7 @@
 <input class="redirectUrl" type="hidden" value="${param.redirectUrl}"/>
 <a id="custom-login-btn" href="javascript:loginWithKakao()">
     로그인
-    <%--<img src="//mud-kage.kakao.com/14/dn/btqbjxsO6vP/KPiGpdnsubSq3a0PHEGUK1/o.jpg" width="300"/>--%>
+    <img src="//mud-kage.kakao.com/14/dn/btqbjxsO6vP/KPiGpdnsubSq3a0PHEGUK1/o.jpg" width="300"/>
 </a>
 
 <script type='text/javascript'>
