@@ -14,19 +14,29 @@
 
 
 <div>
-    room title:${room.title}
+    <a style="font-size: 50px">방제목:${room.title}</a>
 </div>
+<br/>
+<br/>
+<br/>
 <div>
+    <a style="font-size: 30px">참가한사람</a>
     <c:forEach items="${room.relationList}" var="relation" varStatus="status">
-        <div>user: ${relation.user.nickName}</div>
+        <div><a style="font-size: 20px">- ${relation.user.nickName}</a></div>
     </c:forEach>
 </div>
 
+<br/>
+<br/>
+<br/>
 
-<a id="kakao-link-btn" href="javascript:sendLink()">
-    초대
-    <img src="//dev.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
-</a>
+
+<div>
+    <a style="font-size: 20px" id="kakao-link-btn" href="javascript:sendLink()">
+        초대하기
+        <img src="//dev.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
+    </a>
+</div>
 <input type="hidden" class="roomId" value="${room.id}"/>
 
 <script type='text/javascript'>

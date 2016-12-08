@@ -8,16 +8,18 @@
     <title>Create Room</title>
 </head>
 <body>
-room join
+
 <div>
-    <div>${account.nickName}</div>
-    <image src=${account.profileUrl}/>
+    <image width="20%" src=${account.profileUrl}/>
+    <a style="font-size: 50px">${account.nickName}</a>
 </div>
 
-<div>room title: ${room.title}</div>
+<div>
+    <a style="font-size: 50px">방제목 : ${room.title}</a>
+</div>
 
 <form action="/rooms/${room.title}/join" method="post">
-    <input type="submit"/>
+    <input style="font-size:50px" value="방 만들기" type="submit"/>
 </form>
 
 </body>

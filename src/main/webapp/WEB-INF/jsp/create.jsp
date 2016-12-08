@@ -10,15 +10,17 @@
     <script src="/lib/jquery.min.js"></script>
 </head>
 <body>
-room create
 <div>
-    <div>${account.nickName}</div>
-    <image src=${account.profileUrl}/>
+    <image width="20%" src=${account.profileUrl}/>
+    <a style="font-size: 50px">${account.nickName}</a>
 </div>
 
 <form action="/rooms" method="post" name="addRoom">
-    <input type="text" name="title"/>
-    <input type="submit"/>
+    <div>
+        <a style="font-size: 50px">방제목 : </a>
+        <input style="font-size:50px" type="text" name="title"/>
+    </div>
+    <input style="font-size:50px" value="방 만들기" type="submit"/>
 </form>
 
 </div>
