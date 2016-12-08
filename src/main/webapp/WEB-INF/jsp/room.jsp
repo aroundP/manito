@@ -45,7 +45,7 @@
 
     function sendLink() {
         Kakao.Link.sendTalkLink({
-            label: 'test',
+            label: '마니또',
             image: {
                 src: 'https://cloud.githubusercontent.com/assets/4353846/20915318/7e36cd48-bbc8-11e6-8687-4f16338df4cf.jpeg',
                 width: 155,
@@ -53,7 +53,7 @@
             },
             webButton: {
                 text: 'testtest',
-                url: '10.64.83.51:8080/rooms/' + $(".roomId").val()
+                url: 'http://52.39.239.71:8080/rooms/' + $(".roomId").val()
             }
         });
     }
