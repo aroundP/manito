@@ -8,9 +8,16 @@
     <title>Login Demo - Kakao JavaScript SDK</title>
     <script src="/lib/kakao.min.js"></script>
     <script src="/lib/jquery.min.js"></script>
+    <style type="text/css">
+        .top {
+            height: 10%;
+        }
+    </style>
 </head>
-
 <body>
+<div class="top">
+
+</div>
 <input class="redirectUrl" type="hidden" value="${param.redirectUrl}"/>
 <a id="custom-login-btn" href="javascript:loginWithKakao()">
     <img src="//mud-kage.kakao.com/14/dn/btqbjxsO6vP/KPiGpdnsubSq3a0PHEGUK1/o.jpg" width="100%"/>

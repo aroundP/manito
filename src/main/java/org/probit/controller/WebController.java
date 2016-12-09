@@ -16,6 +16,11 @@ public class WebController {
 		return "create";
 	}
 
+	@RequestMapping("/index")
+	public String indexPage() {
+		return "index";
+	}
+
 	@RequestMapping("/loginPage")
 	public String loginPage() {
 		return "login";
