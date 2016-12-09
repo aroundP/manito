@@ -20,7 +20,7 @@
 		<script src="/lib/jquery.min.js"></script>
 	</head>
 	<body class="is-loading">
-
+	<input type="hidden" class="roomId" value="${room.id}"/>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
