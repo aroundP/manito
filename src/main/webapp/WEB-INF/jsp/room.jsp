@@ -21,6 +21,7 @@
 	</head>
 	<body class="is-loading">
 	<input type="hidden" class="roomId" value="${room.id}"/>
+	<input type="hidden" class="roomTitle" value="${room.title}"/>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -72,14 +73,14 @@
 
 				function sendLink() {
 					Kakao.Link.sendTalkLink({
-						label: '마니또',
+						label: '마니또 초대!',
 						image: {
 							src: 'https://cloud.githubusercontent.com/assets/4353846/20915318/7e36cd48-bbc8-11e6-8687-4f16338df4cf.jpeg',
 							width: 155,
 							height: 136
 						},
 						webButton: {
-							text: 'testtest',
+							text: $(".roomId").val() + '방에서 초대합니다.',
 							url: 'http://52.39.239.71:8080/rooms/' + $(".roomId").val()
 						}
 					});
