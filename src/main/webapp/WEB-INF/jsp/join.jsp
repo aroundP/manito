@@ -32,7 +32,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 			<%--<input>Input room name</p>--%>
 		</header>
 		<hr />
-		<form action="/rooms/${room.id}" method="post">
+		<form action="/rooms/${room.id}" method="get">
 			<div class="field">
 				<a>${room.title} </a>
 			</div>
