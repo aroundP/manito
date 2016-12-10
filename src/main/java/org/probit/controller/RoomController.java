@@ -68,10 +68,9 @@ public class RoomController {
 	}
 
 	@RequestMapping(value = "/rooms/{roomId}/join", method = RequestMethod.POST)
-	public String joinRoom(@PathVariable Integer roomId, Model model, HttpSession session) {
+	public String joinRoom(@PathVariable Integer roomId, HttpSession session) {
 		SessionUser sessionUser = (SessionUser)session.getAttribute("account");
 		Room room = relationService.addRelation(roomId, sessionUser.getUserId());
-		model.addAttribute("room", room);
-		return "room";
+		return "redirect:/rooms/" + room.getId();
 	}
 }
